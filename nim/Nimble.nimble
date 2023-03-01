@@ -1,13 +1,21 @@
 # Package
 
+# Required
+
 version       = "0.1.0"
-author        = "Filipe Santos"
-description   = "A new awesome nimble package"
+author        = "epilif3sotnas <filipesantos1999@hotmail.com>"
+description   = "Learn Dependency injection in Nim."
 license       = "Apache-2.0"
+
+
+# Optional
+
 srcDir        = "src"
+binDir        = "target"
 bin           = @["main"]
+backend       = "cpp"
 
 
 # Dependencies
 
-requires "nim >= 1.6.10"
+requires "nim >= 1.6"
