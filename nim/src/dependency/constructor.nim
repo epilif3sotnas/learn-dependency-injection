@@ -1,4 +1,6 @@
+# internal
 import fibonacci
+
 
 type
     Constructor* = ref object
