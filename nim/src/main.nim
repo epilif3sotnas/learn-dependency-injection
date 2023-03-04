@@ -24,7 +24,7 @@ proc main() =
   setter.do_square(uint32(987))
 
   # Interface Injection
-  ### TODO - When Nim implementation of interface is available ###
+  ### TODO - When Nim implementation of interface is available or like compute_service in Python ###
 
 when is_main_module:
   main()
