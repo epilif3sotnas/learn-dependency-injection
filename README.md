@@ -9,7 +9,7 @@ In this repository was built with the goal to learn about Dependency Injection i
 
 #### Rust => Cargo.toml
 
-#### Python => requirements.txt
+#### Python => Requirements.txt
 
 
 ## Folders
