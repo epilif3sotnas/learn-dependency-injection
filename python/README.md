@@ -3,7 +3,7 @@
 Commands to run the project:
 
 ```
-cd {PATH_REPOSITORY}/nim;
+cd {PATH_REPOSITORY}/python;
 pipenv shell;
 pipenv run start;
 ```

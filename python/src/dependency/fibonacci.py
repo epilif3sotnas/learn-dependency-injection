@@ -18,7 +18,7 @@ class Fibonacci(MathCalculation):
             return 1
         
         fibonacci: list = [0,1]
-        for i in range(2,num):
+        for i in range(2, num + 1):
             sum = fibonacci[i - 1] + fibonacci[i - 2]
             fibonacci.append(sum)
         

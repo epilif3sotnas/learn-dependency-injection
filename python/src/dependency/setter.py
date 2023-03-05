@@ -26,17 +26,3 @@ class Setter(object):
         
         square_result: int = self.__square.compute(num)
         print("Square of " + str(num) + ": " + str(square_result))
-
-    def do_fibonacci(self, num: int):
-        if self.__fibonacci == None:
-            return
-        
-        fibonacci_result: int = self.__fibonacci.compute(num)
-        print("Fibonacci of " + str(num) + ": " + str(fibonacci_result))
-
-    def do_square(self, num: int):
-        if self.__square == None:
-            return
-        
-        square_result: int = self.__square.compute(num)
-        print("Square of " + str(num) + ": " + str(square_result))

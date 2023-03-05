@@ -24,17 +24,3 @@ proc do_all*(self: Constructor, num: uint32) =
 
     let square_result = self.square.compute(num)
     echo "Square of " & $num & ": " & $square_result
-
-proc do_fibonacci*(self: Constructor, num: uint32) =
-    if self.fibonacci == nil:
-        return
-
-    let fibonacci_result = self.fibonacci.compute(num)
-    echo "Fibonacci of " & $num & ": " & $fibonacci_result
-
-proc do_square*(self: Constructor, num: uint32) =
-    if self.square == nil:
-        return
-
-    let square_result = self.square.compute(num)
-    echo "Square of " & $num & ": " & $square_result
