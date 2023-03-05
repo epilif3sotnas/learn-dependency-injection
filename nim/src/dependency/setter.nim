@@ -11,10 +11,10 @@ type
 proc new_setter*(): Setter =
     return Setter()
 
-proc set_fibonacci*(self: var Setter, fibonacci: Fibonacci) =
+proc set_fibonacci*(self: Setter, fibonacci: Fibonacci) =
     self.fibonacci = fibonacci
 
-proc set_square*(self: var Setter, square: Square) =
+proc set_square*(self: Setter, square: Square) =
     self.square = square
 
 proc do_all*(self: Setter, num: uint32) =
