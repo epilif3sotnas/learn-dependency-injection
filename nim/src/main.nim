@@ -3,6 +3,7 @@ import dependency/fibonacci
 import dependency/square
 import dependency/constructor
 import dependency/setter
+import dependency/interface_injection
 
 
 proc main() =
@@ -24,7 +25,9 @@ proc main() =
   setter.do_square(uint32(987))
 
   # Interface Injection
-  ### TODO - When Nim implementation of interface is available or like compute_service in Python ###
+  var interface_injection = new_interface_injection()
+  interface_injection.compute_service("Fibonacci", fibonacci, 27)
+  interface_injection.compute_service("Square", square, 27_000)
 
 when is_main_module:
   main()
