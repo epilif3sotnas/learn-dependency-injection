@@ -1,5 +1,5 @@
 package dependency.injection.java.dependency;
 
-public class MathCalculation {
-    
+public interface MathCalculation {
+    public long compute(int num);
 }

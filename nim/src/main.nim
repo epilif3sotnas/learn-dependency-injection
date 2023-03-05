@@ -12,18 +12,18 @@ proc main() =
 
   # Constructor Injection
   var constructor = new_constructor(fibonacci, square)
-  constructor.do_all(uint32(35))
+  constructor.do_all(35'u32)
 
   # Setter Injection
   var setter = new_setter()
   setter.set_fibonacci(fibonacci)
   setter.set_square(square)
-  setter.do_all(uint32(2))
+  setter.do_all(2'u32)
 
   # Interface Injection
   var interface_injection = new_interface_injection()
-  interface_injection.compute_service("Fibonacci", fibonacci, 27)
-  interface_injection.compute_service("Square", square, 27_000)
+  interface_injection.compute_service("Fibonacci", fibonacci, 27'u32)
+  interface_injection.compute_service("Square", square, 27_000'u32)
 
 when is_main_module:
   main()
