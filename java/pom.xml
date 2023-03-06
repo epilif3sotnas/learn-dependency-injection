@@ -7,6 +7,7 @@
   <packaging>jar</packaging>
   <version>0.1.0</version>
   <name>dependency-injection-java</name>
+  <description>Learn Dependency Injection in Java.</description>
   <url>https://github.com/epilif3sotnas/learn-dependency-injection.git</url>
 
   <developers>
