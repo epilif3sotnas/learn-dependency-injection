@@ -9,34 +9,35 @@ import dependency/interface_injection
 import unittest2
 
 
-test "integration__constructor__do_all__valid_data":
-    let fibonacci = new_fibonacci()
-    let square = new_square()
-    let constructor = new_constructor(fibonacci, square)
+suite "integration":
+    test "integration__constructor__do_all__valid_data":
+        let fibonacci = new_fibonacci()
+        let square = new_square()
+        let constructor = new_constructor(fibonacci, square)
 
-    constructor.do_all(10'u32)
+        constructor.do_all(10'u32)
 
-    check true == true
+        check true == true
 
-test "integration__setter__do_all__valid_data":
-    let fibonacci = new_fibonacci()
-    let square = new_square()
-    let setter = new_setter()
-    setter.set_fibonacci(fibonacci)
-    setter.set_square(square)
+    test "integration__setter__do_all__valid_data":
+        let fibonacci = new_fibonacci()
+        let square = new_square()
+        let setter = new_setter()
+        setter.set_fibonacci(fibonacci)
+        setter.set_square(square)
 
-    setter.do_all(10'u32)
+        setter.do_all(10'u32)
 
-    check true == true
+        check true == true
 
-test "integration__interface_injection__do_all__valid_data":
-    let fibonacci = new_fibonacci()
-    let interface_injection = new_interface_injection()
+    test "integration__interface_injection__do_all__valid_data":
+        let fibonacci = new_fibonacci()
+        let interface_injection = new_interface_injection()
 
-    interface_injection.compute_service(
-        "Fibonacci",
-        fibonacci,
-        10
-    )
+        interface_injection.compute_service(
+            "Fibonacci",
+            fibonacci,
+            10
+        )
 
-    check true == true
+        check true == true

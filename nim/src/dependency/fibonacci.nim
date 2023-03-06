@@ -19,6 +19,6 @@ proc compute*(self: Fibonacci, num: uint32): uint64 =
 
         except Exception as ex:
             echo ex.getStackTrace()
-            fibonacci.add(0)
+            return 0'u64
 
     return fibonacci[^1]
