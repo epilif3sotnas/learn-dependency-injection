@@ -1,7 +1,7 @@
 type
     Fibonacci* = ref object
 
-proc new_fibonacci*(): Fibonacci =
+proc newFibonacci*(): Fibonacci =
     return Fibonacci()
 
 proc compute*(self: Fibonacci, num: uint32): uint64 =

@@ -8,19 +8,19 @@ type
         fibonacci: Fibonacci
         square: Square
 
-proc new_constructor*(fibonacci: Fibonacci, square: Square): Constructor =
+proc newConstructor*(fibonacci: Fibonacci, square: Square): Constructor =
     return Constructor(
         fibonacci: fibonacci,
         square: square
     )
 
-proc do_all*(self: Constructor, num: uint32) =
+proc doAll*(self: Constructor, num: uint32) =
     if (self.fibonacci == nil or
             self.square == nil):
         return
 
-    let fibonacci_result = self.fibonacci.compute(num)
-    echo "Fibonacci of " & $num & ": " & $fibonacci_result
+    let fibonacciResult = self.fibonacci.compute(num)
+    echo "Fibonacci of " & $num & ": " & $fibonacciResult
 
-    let square_result = self.square.compute(num)
-    echo "Square of " & $num & ": " & $square_result
+    let squareResult = self.square.compute(num)
+    echo "Square of " & $num & ": " & $squareResult

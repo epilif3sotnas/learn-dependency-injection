@@ -1,0 +1,3 @@
+import integration/dependency/constructor
+import integration/dependency/setter
+import integration/dependency/interfaceinjection

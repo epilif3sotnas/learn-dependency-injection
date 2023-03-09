@@ -1,7 +1,7 @@
 type
     Square* = ref object
 
-proc new_square*(): Square =
+proc newSquare*(): Square =
     return Square()
 
 proc compute*(self: Square, num: uint32): uint64 =

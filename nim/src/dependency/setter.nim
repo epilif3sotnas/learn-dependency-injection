@@ -8,22 +8,22 @@ type
         fibonacci: Fibonacci
         square: Square
 
-proc new_setter*(): Setter =
+proc newSetter*(): Setter =
     return Setter()
 
-proc set_fibonacci*(self: Setter, fibonacci: Fibonacci) =
+proc setFibonacci*(self: Setter, fibonacci: Fibonacci) =
     self.fibonacci = fibonacci
 
-proc set_square*(self: Setter, square: Square) =
+proc setSquare*(self: Setter, square: Square) =
     self.square = square
 
-proc do_all*(self: Setter, num: uint32) =
+proc doAll*(self: Setter, num: uint32) =
     if (self.fibonacci == nil or
             self.square == nil):
         return
 
-    let fibonacci_result = self.fibonacci.compute(num)
-    echo "Fibonacci of " & $num & ": " & $fibonacci_result
+    let fibonacciResult = self.fibonacci.compute(num)
+    echo "Fibonacci of " & $num & ": " & $fibonacciResult
 
-    let square_result = self.square.compute(num)
-    echo "Square of " & $num & ": " & $square_result
+    let squareResult = self.square.compute(num)
+    echo "Square of " & $num & ": " & $squareResult

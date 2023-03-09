@@ -2,20 +2,20 @@
 import std/tables
 
 # internal
-import math_calculation
+import mathcalculation
 
 
 type
     InterfaceInjection* = ref object
 
-proc new_interface_injection*(): InterfaceInjection =
+proc newInterfaceInjection*(): InterfaceInjection =
     return InterfaceInjection()
 
-proc compute_service*(
+proc computeService*(
     self: InterfaceInjection,
-    service_name: string,
+    serviceName: string,
     service: MathCalculation,
     num: uint32
 ) =
     let value = service.compute(num)
-    echo service_name & " of " & $num & ": " & $value
+    echo serviceName & " of " & $num & ": " & $value

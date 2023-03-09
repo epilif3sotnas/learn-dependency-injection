@@ -1,5 +1,5 @@
 # internal
-from dependency.math_calculation import MathCalculation
+from dependency.mathcalculation import MathCalculation
 
 
 class Interface(object):
