@@ -10,7 +10,7 @@ public class Interface {
         int num
     ) {
         long result = service.compute(num);
-        System.out.println(serviceName + "of "
+        System.out.println(serviceName + " of "
                             + String.valueOf(num)
                             + ": " + result);
     }
