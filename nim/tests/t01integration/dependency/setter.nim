@@ -8,7 +8,7 @@ import unittest2
 
 
 suite "Setter Integration Tests":
-    test "integration__setter__doAll__validData":
+    test "integration__doAll__validData":
         let fibonacci = newFibonacci()
         let square = newSquare()
         let setter = newSetter()

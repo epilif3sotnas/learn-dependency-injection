@@ -8,7 +8,7 @@ import unittest2
 
 
 suite "Constructor Integration Tests":
-    test "integration__constructor__doAll__validData":
+    test "integration__doAll__validData":
         let fibonacci = newFibonacci()
         let square = newSquare()
         let constructor = newConstructor(fibonacci, square)

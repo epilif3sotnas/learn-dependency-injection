@@ -8,23 +8,34 @@ import std/algorithm
 # internal
 import dependency/fibonacci
 import dependency/square
-import dependency/constructor
+import dependency/interfaceinjection
 
 # external
 import unittest2
 
 
-suite "Constructor Performance Tests":
-    test "performance__constructor__doAll__validData":
+suite "Interface Injection Performance Tests":
+    test "performance__computeService__validData":
         let fibonacci = newFibonacci()
         let square = newSquare()
-        let constructor = newConstructor(fibonacci, square)
+        let interfaceInjection = newInterfaceInjection()
 
         let startTime = getTime()
         var requestsData: seq[float] = @[];
         while (getTime() - startTime) < initDuration(seconds=45):
             let start = cpuTime()
-            constructor.doAll(10_000'u32)
+            interfaceInjection.computeService(
+                "Fibonacci",
+                fibonacci,
+                10_000'u32
+            )
+
+            interfaceInjection.computeService(
+                "Square",
+                square,
+                10_000'u32
+            )
+
             requestsData.add(cpuTime() - start)
 
         let requestsPerMinute = ((requestsData.len() * 60)).float() / (requestsData.sum())

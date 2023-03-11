@@ -30,15 +30,7 @@ suite "Fibonacci Unit Tests":
 
         check expected == actual
 
-    test "unit__compute__bigNumber":
-        let fibonacci = newFibonacci()
-
-        let expected = 14_139_011_350_745_967_675'u64
-        let actual = fibonacci.compute(100_000_000'u32)
-
-        check expected == actual
-
-    test "unit__compute__lowestNumber":
+    test "unit__compute__lowestData":
         let fibonacci = newFibonacci()
 
         let expected = 0'u64

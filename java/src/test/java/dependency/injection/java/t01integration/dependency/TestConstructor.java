@@ -1,4 +1,4 @@
-package dependency.injection.java.integration.dependency;
+package dependency.injection.java.t01integration.dependency;
 
 // internal
 import dependency.injection.java.dependency.Constructor;
@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 public class TestConstructor {
 
     @Test
-    public void test_integration__Constructor__doAll__validData() {
+    public void test_integration__doAll__validData() {
         var fibonacci = new Fibonacci();
         var square = new Square();
         var constructor = new Constructor(fibonacci, square);

@@ -1,5 +1,5 @@
-import performance/dependency/constructor
-import performance/dependency/setter
-import performance/dependency/interfaceinjection
-import performance/dependency/fibonacci
-import performance/dependency/square
+import t03performance/dependency/constructor
+import t03performance/dependency/setter
+import t03performance/dependency/interfaceinjection
+import t03performance/dependency/fibonacci
+import t03performance/dependency/square

@@ -1,4 +1,4 @@
-package dependency.injection.java.integration.dependency;
+package dependency.injection.java.t01integration.dependency;
 
 // internal
 import dependency.injection.java.dependency.Interface;
@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 public class TestInterface {
     
     @Test
-    public void test_integration__Interface__computeService__validData() {
+    public void test_integration__computeService__validData() {
         var fibonacci = new Fibonacci();
         var square = new Square();
         var interface_ = new Interface();

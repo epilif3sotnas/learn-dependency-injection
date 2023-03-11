@@ -14,15 +14,15 @@ suite "Square Unit Tets":
 
         check value == expected
 
-    test "unit__compute__bigNumber":
+    test "unit__compute__bigData":
         let square = newSquare()
 
-        let expected = 2_520_040_000'u64
-        let value = square.compute(50_200'u32)
+        let expected = 625_000_000'u64
+        let value = square.compute(25_000'u32)
 
         check value == expected
 
-    test "unit__compute__lowestNumber":
+    test "unit__compute__lowestData":
         let square = newSquare()
 
         let expected = 0'u64

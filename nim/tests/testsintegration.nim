@@ -1,3 +1,3 @@
-import integration/dependency/constructor
-import integration/dependency/setter
-import integration/dependency/interfaceinjection
+import t01integration/dependency/constructor
+import t01integration/dependency/setter
+import t01integration/dependency/interfaceinjection

@@ -8,7 +8,7 @@ import unittest2
 
 
 suite "Interface Injection Integration Tests":
-    test "integration__interfaceinjection__computeService__validData":
+    test "integration__computeService__validData":
         let fibonacci = newFibonacci()
         let square = newSquare()
         let interfaceInjection = newInterfaceInjection()
