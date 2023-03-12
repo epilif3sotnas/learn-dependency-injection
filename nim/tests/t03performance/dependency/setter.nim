@@ -23,13 +23,13 @@ suite "Setter Performance Tests":
         setter.setSquare(square)
 
         let startTime = getTime()
-        var requestsData: seq[float] = @[];
+        var requestsData: seq[float] = @[]
         while (getTime() - startTime) < initDuration(seconds=30):
             let start = cpuTime()
             setter.doAll(10_000'u32)
             requestsData.add(cpuTime() - start)
 
-        let requestsPerMinute = (requestsData.len() * 60).float() / (requestsData.sum())
+        let requestsPerMinute = (requestsData.len() * 60).float() / requestsData.sum()
         let meanTime = (requestsData.sum() / (requestsData.len()).float()) * 1_000_000'f
 
         var medianTime = 0'f
