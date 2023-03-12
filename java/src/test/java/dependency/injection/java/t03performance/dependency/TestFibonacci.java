@@ -16,7 +16,7 @@ import org.junit.jupiter.api.Test;
 public class TestFibonacci {
     
     @Test
-    public void test_performance__doAll__validData() {
+    public void test__performance__doAll__validData() {
         var fibonacci = new Fibonacci();
 
         long startTime = new Date().getTime();

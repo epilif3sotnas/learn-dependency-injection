@@ -25,4 +25,4 @@ suite "Interface Injection Integration Tests":
             10
         )
 
-        check true == true
+        check(true)

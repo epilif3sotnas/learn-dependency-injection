@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 public class TestFibonacci {
     
     @Test
-    public void test_unit__compute__validData() {
+    public void test__unit__compute__validData() {
         var fibonacci = new Fibonacci();
 
         long expected = 55L;
@@ -21,7 +21,7 @@ public class TestFibonacci {
     }
 
     @Test
-    public void test_unit__compute__0Data() {
+    public void test__unit__compute__0Data() {
         var fibonacci = new Fibonacci();
 
         long expected = 0L;
@@ -31,7 +31,7 @@ public class TestFibonacci {
     }
 
     @Test
-    public void test_unit__compute__1Data() {
+    public void test__unit__compute__1Data() {
         var fibonacci = new Fibonacci();
 
         long expected = 1L;
@@ -41,7 +41,7 @@ public class TestFibonacci {
     }
 
     @Test
-    public void test_unit__compute__lowestData() {
+    public void test__unit__compute__lowestData() {
         var fibonacci = new Fibonacci();
 
         long expected = 0L;

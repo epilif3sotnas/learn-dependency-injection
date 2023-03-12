@@ -51,4 +51,4 @@ suite "Setter Performance Tests":
         echo("Minimum Time: $# microseconds" % [$round(minTime,3)])
         echo("Maximum Time: $# microseconds" % [$round(maxTime,3)])
 
-        check(true)
+        check true == true

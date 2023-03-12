@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 public class TestSquare {
     
     @Test
-    public void test_unit__compute__validData() {
+    public void test__unit__compute__validData() {
         var square = new Square();
 
         long expected = 100L;
@@ -21,7 +21,7 @@ public class TestSquare {
     }
 
     @Test
-    public void test_unit__compute__bigData() {
+    public void test__unit__compute__bigData() {
         var square = new Square();
 
         long expected = 625_000_000L;
@@ -31,7 +31,7 @@ public class TestSquare {
     }
 
     @Test
-    public void test_unit__compute__lowestData() {
+    public void test__unit__compute__lowestData() {
         var square = new Square();
 
         long expected = 0L;

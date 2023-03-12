@@ -16,7 +16,7 @@ import org.junit.jupiter.api.Test;
 public class TestSquare {
     
     @Test
-    public void test_performance__doAll__validData() {
+    public void test__performance__doAll__validData() {
         var square = new Square();
 
         long startTime = new Date().getTime();

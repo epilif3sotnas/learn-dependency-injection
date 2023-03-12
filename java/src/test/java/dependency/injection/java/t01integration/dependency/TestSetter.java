@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 public class TestSetter {
     
     @Test
-    public void test_integration__doAll__validData() {
+    public void test__integration__doAll__validData() {
         var fibonacci = new Fibonacci();
         var square = new Square();
         var setter = new Setter();

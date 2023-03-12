@@ -17,4 +17,4 @@ suite "Setter Integration Tests":
 
         setter.doAll(10'u32)
 
-        check true == true
+        check(true)

@@ -15,4 +15,4 @@ suite "Constructor Integration Tests":
 
         constructor.doAll(10'u32)
 
-        check true == true
+        check(true)

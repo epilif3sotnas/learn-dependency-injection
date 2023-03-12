@@ -8,25 +8,23 @@ import std/algorithm
 # internal
 import dependency/fibonacci
 import dependency/square
-import dependency/setter
+import dependency/constructor
 
 # external
 import unittest2
 
 
-suite "Setter Performance Tests":
+suite "Constructor Performance Tests":
     test "performance__doAll__validData":
         let fibonacci = newFibonacci()
         let square = newSquare()
-        let setter = newSetter()
-        setter.setFibonacci(fibonacci)
-        setter.setSquare(square)
+        let constructor = newConstructor(fibonacci, square)
 
         let startTime = getTime()
         var requestsData: seq[float] = @[];
         while (getTime() - startTime) < initDuration(seconds=30):
             let start = cpuTime()
-            setter.doAll(10_000'u32)
+            constructor.doAll(10_000'u32)
             requestsData.add(cpuTime() - start)
 
         let requestsPerMinute = (requestsData.len() * 60).float() / (requestsData.sum())
@@ -51,4 +49,4 @@ suite "Setter Performance Tests":
         echo("Minimum Time: $# microseconds" % [$round(minTime,3)])
         echo("Maximum Time: $# microseconds" % [$round(maxTime,3)])
 
-        check(true)
+        check true == true

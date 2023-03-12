@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 public class TestInterface {
     
     @Test
-    public void test_integration__computeService__validData() {
+    public void test__integration__computeService__validData() {
         var fibonacci = new Fibonacci();
         var square = new Square();
         var interface_ = new Interface();
