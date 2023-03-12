@@ -11,7 +11,7 @@ class Fibonacci(MathCalculation):
         if not isinstance(num, int):
             return -1
         
-        if num < 0:
+        if num <= 0:
             return 0
         
         if num == 1:
