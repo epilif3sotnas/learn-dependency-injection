@@ -1,6 +1,7 @@
 # internal
-import fibonacci
-import square
+import
+    fibonacci,
+    square
 
 
 type

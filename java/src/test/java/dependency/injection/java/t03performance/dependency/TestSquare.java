@@ -1,6 +1,6 @@
 package dependency.injection.java.t03performance.dependency;
 
-// java
+// std
 import java.util.Date;
 import java.util.ArrayList;
 import java.util.Comparator;

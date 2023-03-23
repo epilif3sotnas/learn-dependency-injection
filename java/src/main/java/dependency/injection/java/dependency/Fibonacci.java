@@ -1,6 +1,6 @@
 package dependency.injection.java.dependency;
 
-// java
+// std
 import java.util.ArrayList;
 
 

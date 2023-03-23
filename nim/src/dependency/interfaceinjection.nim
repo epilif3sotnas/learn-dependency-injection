@@ -1,8 +1,10 @@
-# nim
-import std/tables
+# std
+import
+    std/tables
 
 # internal
-import mathcalculation
+import
+    mathcalculation
 
 
 type

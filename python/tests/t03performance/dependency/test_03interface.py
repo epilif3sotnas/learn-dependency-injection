@@ -1,4 +1,4 @@
-# python
+# std
 from time import time
 
 # internal

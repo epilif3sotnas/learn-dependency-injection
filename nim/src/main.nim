@@ -1,9 +1,12 @@
 # internal
-import dependency/fibonacci
-import dependency/square
-import dependency/constructor
-import dependency/setter
-import dependency/interfaceinjection
+import
+  dependency/[
+    fibonacci,
+    square,
+    constructor,
+    setter,
+    interfaceinjection
+  ]
 
 
 proc main() =
