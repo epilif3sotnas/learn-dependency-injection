@@ -1,5 +1,5 @@
 # std
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
   name = "depency_injection",
@@ -13,7 +13,7 @@ setup(
   description = "Learn Dependency Injection in Nim.",
   license = "Apache-2.0",
 
-  packages = ["src"],
+  packages = find_packages(),
 
   python_requires = ">=3.7",
   install_requires = []
