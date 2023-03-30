@@ -5,11 +5,8 @@
   <groupId>dependency.injection.java</groupId>
   <artifactId>dependency-injection-java</artifactId>
   <packaging>jar</packaging>
-  <version>0.1.0</version>
   <name>dependency-injection-java</name>
-  <description>Learn Dependency Injection in Java.</description>
-  <url>https://github.com/epilif3sotnas/learn-dependency-injection.git</url>
-
+  <version>0.1.0</version>
   <developers>
     <developer>
       <id>epilif3sotnas</id>
@@ -18,6 +15,8 @@
     </developer>
   </developers>
 
+  <url>https://github.com/epilif3sotnas/learn-dependency-injection.git</url>
+  <description>Learn Dependency Injection in Java.</description>
   <licenses>
     <license>
       <name>Apache-2.0</name>
@@ -73,7 +72,5 @@
         </configuration>
       </plugin>
     </plugins>
-
   </build>
-
 </project>
