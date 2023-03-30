@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 setup(
-  name = "depency_injection",
+  name = "depency_injection_python",
   version = "0.1.0",
   author = "epilif3sotnas",
   author_email = "filipesantos1999@hotmail.com",
