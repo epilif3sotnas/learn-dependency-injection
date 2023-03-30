@@ -13,5 +13,6 @@ setup(
     license = "Apache-2.0",
 
     packages = ["src"],
-    requires = []
+    requires = [],
+		python_requires = ">=3.7"
 )
