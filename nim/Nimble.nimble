@@ -1,4 +1,4 @@
-name            = "dependency-injection-nim"
+packageName     = "dependency-injection-nim"
 version         = "0.1.0"
 author          = "epilif3sotnas <filipesantos1999@hotmail.com>"
 
@@ -10,5 +10,5 @@ binDir          = "target"
 bin             = @["main"]
 backend         = "cpp"
 
-requires "nim >= 1.6",
-        "unittest2 >= 0"
+requires        "nim >= 1.6",
+                "unittest2 >= 0"
