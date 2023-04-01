@@ -1,5 +1,3 @@
-# Package
-
 name            = "dependency-injection-nim"
 version         = "0.1.0"
 author          = "epilif3sotnas <filipesantos1999@hotmail.com>"
